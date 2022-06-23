@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <title>MyBlog</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">AS-Blogs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="\about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Topics
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Web-Series</a>
+                    <a class="dropdown-item" href="#">Anime</a>
+                    <a class="dropdown-item" href="#">Movies</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Trending</a>
+                    <a class="dropdown-item" href="#">Write for US</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+              <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Signup</button>
+              </div>
+            </div>
+        </nav>
+  <!--Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to AS-Blogs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- SignUpModal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get an AS-Blogs Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://wallpapercave.com/dwp1x/1JSgzAQ.jpg" class="d-block w-100" alt="..." height="80%" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>WELCOME to AS-Blogs</h1>
+                  <p>All About the ANIME, Movies & Many More.</p>
+                  <div class="button btn btn-primary">ANIME</div>
+                  <div class="button btn btn-success">MOVIES</div>
+                  <div class="button btn btn-warning">WEB-SERIES</div>
+                  <div class="button btn btn-danger">TRENDS</div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://c4.wallpaperflare.com/wallpaper/338/635/808/background-popcorn-film-wallpaper-preview.jpg" class="d-block w-100" alt="..." height="80%" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                     <h1>BEST Movies Blogs</h1>
+                    <p>All About the ANIME, Movies & Many More.</p>
+                    <div class="button btn btn-primary">ANIME</div>
+                    <div class="button btn btn-success">MOVIES</div>
+                    <div class="button btn btn-warning">WEB-SERIES</div>
+                    <div class="button btn btn-danger">TRENDS</div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://s.itl.cat/pngfile/s/124-1242863_the-walking-dead-breaking-bad-lost-spartacus-breaking.jpg" class="d-block w-100" alt="..." height="80%" width="100%">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>All Time best Report</h1>
+                    <p>All About the ANIME, Movies & Many More.</p>
+                    <div class="button btn btn-primary">ANIME</div>
+                    <div class="button btn btn-success">MOVIES</div>
+                    <div class="button btn btn-warning">WEB-SERIES</div>
+                    <div class="button btn btn-danger">TRENDS</div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+          <div class="container my-5">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <strong class="d-inline-block mb-2 text-primary">Movies</strong>
+                      <h3 class="mb-0">Best Movies</h3>
+                      <div class="mb-1 text-muted">June 23</div>
+                      <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                      <img class="bd-placeholder-img" width="100%" height="100%" src="https://www.denofgeek.com/wp-content/uploads/2013/05/best-summer-movies.jpg?resize=768%2C432" alt="">
+            
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <strong class="d-inline-block mb-2 text-success">ANIME</strong>
+                      <h3 class="mb-0">Best Anime</h3>
+                      <div class="mb-1 text-muted">June 23</div>
+                      <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="https://chandigarhfirst.com/wp-content/uploads/2021/08/anime.jpeg" alt="">
+            
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">WEB-SERIES</strong>
+                        <h3 class="mb-0">Best Web-Series</h3>
+                        <div class="mb-1 text-muted">June 23</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                      </div>
+                      <div class="col-auto d-none d-lg-block">
+                          <img class="bd-placeholder-img" width="100%" height="100%" src="https://media.gqindia.com/wp-content/uploads/2019/11/top-image19-1920x1080.jpg" alt="">
+              
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">TRENDS</strong>
+                        <h3 class="mb-0">Trending News</h3>
+                        <div class="mb-1 text-muted">June 23</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                      </div>
+                      <div class="col-auto d-none d-lg-block">
+                          <img class="bd-placeholder-img" width="100%" height="100%" src="https://static.toiimg.com/photo/msid-88562880,width-96,height-65.cms" alt="">
+              
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <footer class="container my-3">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2022 AS-Blogs, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </footer>
+    </body>
+</html>
